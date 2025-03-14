@@ -11,7 +11,8 @@
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "find-words": "ts-node src/wordFinder.ts",
-    "water-bucket": "ts-node src/waterBucketProblem.ts"
+    "water-bucket": "ts-node src/waterBucketProblem.ts",
+    "traveling-politician": "ts-node src/travelingPolitician.ts"
   },
   "keywords": [],
   "author": "",

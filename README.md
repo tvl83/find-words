@@ -53,6 +53,31 @@ The program uses breadth-first search to explore all possible states of the buck
 
 This approach guarantees finding the optimal solution with the minimum number of steps.
 
+## Traveling Politician Problem
+
+This project includes a solution to the traveling politician problem, which is a variant of the classic Traveling Salesman Problem (TSP):
+
+**Problem**: A politician has to start his campaign in the capital of Iowa (Des Moines), visit every state capital including Hawaii and Alaska, and end up in Washington DC at the White House. Each state capital should be visited exactly once. The goal is to determine the best route and the total distance of this route.
+
+To run the traveling politician problem solution:
+
+```bash
+pnpm traveling-politician
+```
+
+### How the Algorithm Works
+
+The program uses the Nearest Neighbor algorithm to find a reasonably good solution to this complex problem:
+
+1. Start at the specified starting point (Des Moines, Iowa)
+2. At each step, visit the nearest unvisited state capital
+3. After visiting all state capitals, go to the ending point (Washington DC)
+4. Calculate the total distance of the route
+
+The program uses the Haversine formula to calculate the distance between locations, which accounts for the curvature of the Earth. This provides accurate distances between geographical coordinates.
+
+While the Nearest Neighbor algorithm doesn't guarantee the optimal solution to the Traveling Salesman Problem (which is NP-hard), it provides a good approximation in reasonable time.
+
 ## Prerequisites
 
 - Node.js (v14 or higher recommended)
@@ -104,6 +129,7 @@ pnpm start
 - `pnpm test` - Run tests (not configured yet)
 - `pnpm find-words` - Run the word finder program
 - `pnpm water-bucket` - Run the water bucket problem solver
+- `pnpm traveling-politician` - Run the traveling politician problem solver
 
 ## License
 
