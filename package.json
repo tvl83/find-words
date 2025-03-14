@@ -10,7 +10,8 @@
     "watch": "tsc -w",
     "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "find-words": "ts-node src/wordFinder.ts"
+    "find-words": "ts-node src/wordFinder.ts",
+    "water-bucket": "ts-node src/waterBucketProblem.ts"
   },
   "keywords": [],
   "author": "",
