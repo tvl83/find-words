@@ -78,6 +78,34 @@ The program uses the Haversine formula to calculate the distance between locatio
 
 While the Nearest Neighbor algorithm doesn't guarantee the optimal solution to the Traveling Salesman Problem (which is NP-hard), it provides a good approximation in reasonable time.
 
+## Triangle Area Calculator
+
+This project includes a simple function to calculate the area of a triangle:
+
+**Problem**: Write a function that takes the base and height of a triangle and returns its area.
+
+The solution uses the standard formula for calculating the area of a triangle: `area = (base * height) / 2`.
+
+To run the triangle area calculator:
+
+```bash
+pnpm triangle-area
+```
+
+The program demonstrates the calculation with several examples and validates that the inputs are positive numbers.
+
+### Usage in Other Files
+
+The `calculateTriangleArea` function is exported and can be imported into other files:
+
+```typescript
+import { calculateTriangleArea } from './triangleArea';
+
+// Calculate the area of a triangle with base 5 and height 8
+const area = calculateTriangleArea(5, 8);
+console.log(`The area is: ${area}`); // Output: The area is: 20
+```
+
 ## Prerequisites
 
 - Node.js (v14 or higher recommended)
@@ -130,6 +158,7 @@ pnpm start
 - `pnpm find-words` - Run the word finder program
 - `pnpm water-bucket` - Run the water bucket problem solver
 - `pnpm traveling-politician` - Run the traveling politician problem solver
+- `pnpm triangle-area` - Run the triangle area calculator
 
 ## License
 
