@@ -4,7 +4,6 @@
 
 import { v4 as uuidv4 } from 'uuid';
 import { Order, OrderItem, OrderStatus } from '../models/order';
-import { Book } from '../models/book';
 
 // In-memory storage for orders
 const orders: Order[] = [];

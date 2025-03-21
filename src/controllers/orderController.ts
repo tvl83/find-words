@@ -81,7 +81,7 @@ export class OrderController {
   /**
    * Get all orders
    */
-  getAllOrders(req: Request, res: Response): void {
+  getAllOrders(_req: Request, res: Response): void {
     try {
       const orders = orderService.getAllOrders();
       res.json(orders);
