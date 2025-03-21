@@ -2,6 +2,42 @@
 
 A simple TypeScript project initialized with pnpm.
 
+## Book E-Commerce Platform
+
+This project includes a full-featured e-commerce platform for books that allows users to:
+
+1. Search for books by title, author, and other criteria
+2. View book details
+3. Place orders for books
+4. Receive an email with a placeholder eBook file
+
+The platform is built using:
+- Express.js for the web server
+- EJS for templating
+- PDFKit for generating placeholder eBook files
+- Nodemailer for sending emails
+
+To run the e-commerce platform:
+
+```bash
+pnpm ecommerce
+```
+
+Then open your browser to `http://localhost:3000` to view the platform.
+
+### Features
+
+- **Book Browsing**: Browse and search through a collection of books
+- **Order Processing**: Place orders for books with customer information
+- **Email Delivery**: Receive order confirmation emails with attached eBook files
+- **Responsive Design**: Works on desktop and mobile devices
+
+### Implementation Details
+
+- Uses in-memory storage for books and orders
+- Generates placeholder PDF files to represent eBooks
+- Sends emails using Ethereal for testing (no real emails are sent)
+
 ## Word Finder
 
 This project includes a word finder program that takes a letter combination and creates an alphabetical list of all words that can be formed using those letters. The program uses a Scrabble dictionary to find valid words.
@@ -159,6 +195,7 @@ pnpm start
 - `pnpm water-bucket` - Run the water bucket problem solver
 - `pnpm traveling-politician` - Run the traveling politician problem solver
 - `pnpm triangle-area` - Run the triangle area calculator
+- `pnpm ecommerce` - Run the book e-commerce platform
 
 ## License
 
